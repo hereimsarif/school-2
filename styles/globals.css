@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --tw-text-opacity: 1;
+}
+
+input, select, textarea {
+  @apply border border-neutral px-3 py-2 bg-white dark:bg-gray-900 focus:outline-none focus:ring focus:ring-secondary rounded-xl transition;
+}
+
+body.user-is-tabbing :focus {
+  outline: 2px solid #20ae58;
+  outline-offset: 2px;
+}
+
+/* Animations */
+.animate-fade-in {
+  animation: fade-in 0.6s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% { opacity:0; transform: translateY(8px); }
+  100% { opacity:1; transform: none; }
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+  background: #1863ab;
+  border-radius: 0.75rem;
+}
+
+::-moz-selection {
+  background: #20ae58;
+  color: white;
+}
+::selection {
+  background: #20ae58;
+  color: white;
+}
