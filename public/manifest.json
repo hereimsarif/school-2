@@ -1,0 +1,22 @@
+{
+  "short_name": "School",
+  "name": "School Website",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/images/logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#1863ab",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#1863ab",
+  "description": "Modern, accessible school website with Next.js, React, and Tailwind"
+}
