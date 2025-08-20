@@ -1,0 +1,45 @@
+// Prisma schema for optional backend usage
+// Uncomment and run `prisma db push` to initialize.
+// generator client {
+//   provider = "prisma-client-js"
+// }
+//
+// datasource db {
+//   provider = "sqlite"
+//   url      = "file:./dev.db"
+// }
+//
+// model AdmissionApplication {
+//   id         Int      @id @default(autoincrement())
+//   name       String
+//   parentEmail String
+//   grade      String
+//   message    String?
+//   submittedAt DateTime @default(now())
+// }
+//
+// model ContactMessage {
+//   id         Int      @id @default(autoincrement())
+//   name       String
+//   email      String
+//   message    String
+//   submittedAt DateTime @default(now())
+// }
+//
+// model Faculty {
+//   id         Int      @id @default(autoincrement())
+//   name       String
+//   photo      String
+//   designation String
+//   department  String
+// }
+//
+// model Blog {
+//   id         Int      @id @default(autoincrement())
+//   slug       String   @unique
+//   title      String
+//   date       DateTime
+//   author     String
+//   excerpt    String
+//   content    String
+// }
